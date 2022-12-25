@@ -1,0 +1,18 @@
+{
+  "name": "dadecreamy-main",
+  "version": "1.0.0",
+  "description": "Dadecreamy Foodies and Events is a catering company located in Lagos, Nigeria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esther Ohiomame",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "mysqli": "^3.1.4",
+    "php-node": "^0.0.2"
+  }
+}
