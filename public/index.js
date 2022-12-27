@@ -95,3 +95,18 @@ function about(){
 $('.gallery').lightGallery({
   selector: 'img'
 });
+
+const testimonialsContainer = document.querySelector(".testimonials-container");
+const prevButton = document.querySelector("#prev-button");
+const nextButton = document.querySelector("#next-button");
+
+// Handle clicking of the prev button
+prevButton.addEventListener("click", function() {
+  testimonialsContainer.scrollLeft -= testimonialsContainer.offsetWidth;
+});
+
+// Handle clicking of the next button
+nextButton.addEventListener("click", function() {
+  testimonialsContainer.scrollLeft += testimonialsContainer.offsetWidth;
+});
+
