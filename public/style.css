@@ -279,6 +279,10 @@ transition: all 0.5s ;
   color: black;
 }
 
+#about button {
+  border: 1px solid black;
+}
+
 #about > p {
   padding: 0px 40px;
   font-size: 19px;
@@ -325,9 +329,7 @@ transition: all 0.5s ;
   transform: scale(1.1); /* Scale up the image on hover */
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */}
 
-#testimonials {
-  background-color: #fcc8d1;
-}
+
 
 @media (max-width: 800px)
 {#gallery > div {
@@ -365,12 +367,17 @@ transition: all 0.5s ;
   height: 100%;
 }  }
 
+#testimonials{
+  background-image: url(images/food4.png);
+  background-size: cover;
+}
+
 #testimonials > h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 40px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 #testimonials > div {
@@ -397,51 +404,13 @@ grid-template-columns: auto;
 
 
 #person {
-  background-color: #ff79be;
+  background-color: #64626286;
   color: white;
   text-align: center; 
   border-radius: 5%;
   box-shadow: 5px 10px 10px #080808;
   margin-bottom: 30px;
 }
-
-.person1 {
-  animation: shake 5s infinite;
-}
-
-.person2 {
-  animation: shake 7s infinite;
-}
-
-.person3 {
-  animation: shake 4s infinite;
-}
-
-@keyframes shake {
-  20%  {
-      transform: translateX(4px);
-      transform: translateY(4px);
-  }
-
-  40% {
-    transform: translateX(-4px);
-    transform: translateY(-4px); 
-  }
-
-  60% {
-    transform: translateY(6px);
-    transform: translateX(5px);
-  }
-
-  80% {
-    transform: translateY(-2px);
-    transform: translateX(-3px);
-  } 
-  100% {
-    transform: translateX(0px);
-    transform: translateY(0px);
-  }
-  }
 
 #person > h3 {
   font-size: 25px;
@@ -473,6 +442,7 @@ button:hover {
 }
 .swiper-button-prev, .swiper-button-next {
   color: #ff6078;
+  padding: 80px;
 }
 
 #map {
