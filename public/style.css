@@ -409,7 +409,7 @@ grid-template-columns: auto;
   text-align: center; 
   border-radius: 5%;
   box-shadow: 5px 10px 10px #080808;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #person > h3 {
@@ -420,6 +420,11 @@ grid-template-columns: auto;
 #person > p {
  padding: 15px;
 }
+
+.icon {
+  color: yellow;
+}
+
 .swiper-slide {
   text-align: center;
 }
@@ -432,7 +437,7 @@ grid-template-columns: auto;
 @media (max-width: 850px) {
 .carousel {
   width: 100%;
-  margin-top: 0;
+  margin-top: 10px;
 } 
  }
 
@@ -442,7 +447,13 @@ button:hover {
 }
 .swiper-button-prev, .swiper-button-next {
   color: #ff6078;
-  padding: 80px;
+  padding: 60px;
+}
+
+@media (max-width: 500px) {
+  .swiper-button-prev, .swiper-button-next {
+    padding: 30px;
+  }
 }
 
 #map {
@@ -497,6 +508,8 @@ button:hover {
 footer {
   background-color: hotpink;
   color: white;
+  font-family: 'Raleway';
+  font-weight: 600;
 }
 
 
@@ -509,7 +522,7 @@ footer form {
 
 footer form label {
   font-size: 30px;
-  font-family: 'Raleway Dots';
+  font-family: 'Raleway';
 }
 
 footer form input[type=email] {
