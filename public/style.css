@@ -474,6 +474,44 @@ button:hover {
   margin-top: 30px;
 }
 
+#findus input {
+  margin-top: 7px;
+  padding: 6px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  width: 400px;
+  border-color: rgb(255, 97, 121);
+  transition: 600ms;
+  outline: none;
+}
+
+#findus input[type=submit] {
+  background-color: #ff6078;
+  width: 80px;
+  height: 40px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-align: center; }
+
+ input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: black;
+  }
+
+  textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border-color: rgb(255, 97, 121);
+    transition: 600ms;
+    outline: none;
+  }
+
 .frame {
   width: 500px;
   height: 600px;
@@ -489,8 +527,9 @@ button:hover {
 #findus {
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+
 
 
 #findus h2 {

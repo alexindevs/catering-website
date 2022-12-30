@@ -15,7 +15,14 @@ app.get("/", function(res, req) {
 } )
 
 app.post("/", function(req, res) {
+    console.log(req.body.emails)
+    res.redirect("/")
+
+})
+
+app.post("/messages", function(req, res) {
     console.log(req.body.email)
+    console.log(req.body.message)
     res.redirect("/")
 
 })
