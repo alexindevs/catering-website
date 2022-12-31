@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dadecreamy Foodies and Events</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+  <script src="https://kit.fontawesome.com/106e912e00.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="css/about.css">
+          <link rel="icon" href="logo.ico">
+          </head>
+</head>
+<body>
+    
+		<div class="navbar">
+			<nav>
+				<img src="images/logo.png" alt="">
+				<div class="icon-one" onclick="toggleMenu()">
+					<div class="hamburger hamburger-one"></div>
+				  </div>
+			  <ul class="navlist">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Events</a></li>
+				<button type="button" class="navbtn">Contact Us</button>
+			  </ul>
+			</nav>
+		  </div>
+          <section>
+            <div class="header">
+                <h1 id="header">About Us</h1>
+            </div>
+          </section>
+          <section id="ceo">
+            <div class="ceoimg">
+                <img src="images/afolashade.jpg" id="ceoimg" alt="Afolashade Aramide Akinsete">
+            </div>
+            <div class="ceotext">
+                <h2>Afolashade Aramide Akinsete</h2>
+                <p>She started her career in the catering industry over 10 years ago, working in various restaurants and event spaces. She quickly gained a reputation for her attention to detail and her ability to create mouth-watering dishes that exceeded her clients' expectations.</p>
+                <p>Inspired by her success and her desire to bring her own personal touch to the catering industry, Afolashade decided to start her own business. With the support of her team, she has been able to turn her dream into a reality, offering catering services for events of all sizes.</p>
+                <p>In addition to our exceptional food, we also provide professional and reliable service. Our team is dedicated to ensuring that every event we cater is a success, from start to finish.
+We are thrilled to be able to bring our passion for catering to the Lagos community and look forward to making your next event a memorable one. Thank you for considering Dadecreamy Foodies And Events for your catering needs.</p>
+            </div>
+		  </section>
+          <section id="misvis">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsam dolor dolores nulla? Sunt ratione sit, consequuntur numquam aperiam cum, ipsum dicta maiores officia temporibus reprehenderit soluta cupiditate, nesciunt maxime. Eum, id ipsum tempore veritatis rerum iusto quisquam aliquam molestias, magnam nihil temporibus ullam ex ea exercitationem numquam labore est soluta mollitia consequatur cupiditate similique laborum voluptatibus vitae? Fugiat, aspernatur!</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsam dolor dolores nulla? Sunt ratione sit, consequuntur numquam aperiam cum, ipsum dicta maiores officia temporibus reprehenderit soluta cupiditate, nesciunt maxime. Eum, id ipsum tempore veritatis rerum iusto quisquam aliquam molestias, magnam nihil temporibus ullam ex ea exercitationem numquam labore est soluta mollitia consequatur cupiditate similique laborum voluptatibus vitae? Fugiat, aspernatur!</p>
+            </div>
+          </section>
+          <section id="team">
+            <h2 class="team-title">Our Team</h2>
+            <p>Meet the Dadecreamy team! Our team is made up of enthusiastic caterers, and we are constantly striving to learn and grow in our roles. We are committed to delivering the best possible services to our clients and to constantly improving the way we do business.</p>
+            <div class="team">
+                <div class="member">
+                    <img class="member-image" src="images/team1.jpg">
+                    <h4>Team Member</h4>
+                    <p>Team Member's Job</p>
+                </div>
+                <div class="member">
+                    <img class="member-image" src="images/team2.jpg">
+                    <h4>Team Member</h4>
+                    <p>Team Member's Job</p>
+                </div>
+                <div class="member">
+                    <img class="member-image" src="images/team3.jpg">
+                    <h4>Team Member</h4>
+                    <p>Team Member's Job</p>
+                </div>
+                <div class="member">
+                    <img class="member-image" src="images/team4.jpg">
+                    <h4>Team Member</h4>
+                    <p>Team Member's Job</p>
+                </div>
+                <div class="member">
+                    <img class="member-image" src="images/team5.jpg">
+                    <br>
+                    <h4>Team Member</h4>
+                    <p>Team Member's Job</p>
+                </div>
+            </div>
+          </section>
+          
+          <footer>
+            <form action="/" method="post">
+                <label for="email">Enter your Email</label>
+                <br><br>
+                <input type="email" name="emails">
+                <input type="submit" value="Submit">
+    
+            </form>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+            <br><br>
+            <p class="credit">&copy; <span id="year"></span> Dadecreamy Foodies And Events</p>
+        </footer>
+    <script>const currentYear = new Date().getFullYear();
+    document.getElementById('year').innerHTML = currentYear; 
+    </script>
+		<script>
+			document.querySelector('.icon-one').addEventListener("click", function() {
+		document.querySelector('.icon-one').classList.toggle('active-one');
+	  });
+			function toggleMenu() {
+	  var navbar = document.querySelector('.navlist');
+	  var menu = document.querySelector('.hamburger-menu');
+	  navbar.classList.toggle('show');
+	  menu.classList.toggle('open');
+			} 
+		</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+<script src="index.js"></script>
+</body>
+</html>

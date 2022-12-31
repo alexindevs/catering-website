@@ -24,5 +24,11 @@ app.post("/messages", function(req, res) {
     console.log(req.body.email)
     console.log(req.body.message)
     res.redirect("/")
+})
 
+app.get("/about", function(req, res) {
+    res.sendFile(__dirname + "/public/about.html")
+})
+app.get("/gallery", function(req, res) {
+    res.sendFile(__dirname + "/public/gallery.html")
 })

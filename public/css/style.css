@@ -210,7 +210,7 @@ TODO: Commit to github
 TODO: take that topic on mongodb/ buy card */
 
 #hero {
-  background: url(images/himage1.jpg);
+  background: url(../images/himage1.jpg);
   background-position: cover;
   height: auto;
   background-attachment: fixed;
@@ -368,7 +368,7 @@ transition: all 0.5s ;
 }  }
 
 #testimonials{
-  background-image: url(images/food4.png);
+  background-image: url(../images/food4.png);
   background-size: cover;
 }
 
@@ -545,7 +545,7 @@ button:hover {
 }
 
 footer {
-  background-color: hotpink;
+  background-color: #ff6078;
   color: white;
   font-family: 'Raleway';
   font-weight: 600;
