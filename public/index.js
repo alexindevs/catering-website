@@ -116,20 +116,3 @@ prevButton.addEventListener("click", function() {
 nextButton.addEventListener("click", function() {
   testimonialsContainer.scrollLeft += testimonialsContainer.offsetWidth;
 });
-
-const div = document.querySelector('.event');
-const img = div.querySelector('img');
-const text = div.querySelector('p');
-
-function handleHover() {
-  img.style.filter = 'brightness(50%)';
-  text.style.color = 'white';
-}
-
-function handleLeave() {
-  img.style.filter = 'brightness(100%)';
-  text.style.color = 'transparent';
-}
-
-div.addEventListener('mouseenter', handleHover);
-div.addEventListener('mouseleave', handleLeave);

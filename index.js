@@ -52,8 +52,7 @@ app.post("/messages", function(req, res) {
     console.log("Data Saved Succesfully")
     }
   });
-  res.redirect("/")
-})
+  res.redirect(req.headers.referer);})
 
 const signupSchema = new mongoose.Schema({
     name: String,
@@ -67,9 +66,7 @@ app.post("/signup", function(req, res) {
         name: req.body.names,
         email: req.body.emails
       });
-    
-      // Save the signup to the 'signups' collection
-      signup.save(function (error) {
+          signup.save(function (error) {
         if (error) {
           console.log(error);
         } else {
@@ -77,5 +74,7 @@ app.post("/signup", function(req, res) {
           console.log("Data Saved Succesfully")
 
         }
+  
       });
+      res.redirect(req.headers.referer);
     });

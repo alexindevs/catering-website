@@ -23,7 +23,7 @@
 					<div class="hamburger hamburger-one"></div>
 				  </div>
 			  <ul class="navlist">
-				<li><a href="#">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/gallery">Gallery</a></li>
 				<li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
@@ -32,3 +32,73 @@
 			  </ul>
 			</nav>
 		  </div>
+          <section>
+            <div class="header">
+                <h1 id="header">Events</h1>
+            </div>
+          </section>
+          <section id="events">
+            <div class="event">
+				<img src="images/himage1.jpg" alt="">
+				<p>Annie's Birthday</p>
+			</div>
+            <div class="event">
+				<img src="images/himage2.jpg" alt="">
+				<p>Tobi Weds Uju</p>
+			</div>
+            <div class="event">
+				<img src="images/himage3.jpg" alt="">
+				<p>MTN End Of The Year Party</p>
+			</div>
+            <div class="event">
+				<img src="images/himage4.jpg" alt="">
+				<p>Opic Garden's Giveaway</p>
+			</div>
+            <div class="event">
+				<img src="images/himage5.jpg" alt="">
+				<p>Meridian Housing Launch</p>
+			</div>
+            <div class="event">
+				<img src="images/himage6.jpg" alt="">
+				<p>Mrs Adegoke @ 70</p>
+			</div>
+          </section>
+          <footer>
+            <form action="/signup" method="post">
+                <h3>Sign-up to our newsletter</h3>
+                <label for="name">What's your name?</label>
+                <br>
+                <input type="text" name="names"><br><br>
+                <label for="email">Enter your Email</label>
+                <br>
+                <input type="email" name="emails">
+                <input type="submit" value="Submit">
+    
+            </form>
+            <ul>
+                <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/#findus">Contact</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+                <li><a href="/events">Events</a></li>
+            </ul>
+            <br><br>
+            <p class="credit">&copy; <span id="year"></span> Dadecreamy Foodies And Events</p>
+        </footer>
+          <script>
+			document.querySelector('.icon-one').addEventListener("click", function() {
+		document.querySelector('.icon-one').classList.toggle('active-one');
+	  });
+			function toggleMenu() {
+	  var navbar = document.querySelector('.navlist');
+	  var menu = document.querySelector('.hamburger-menu');
+	  navbar.classList.toggle('show');
+	  menu.classList.toggle('open');
+			} 
+		</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+<script src="index.js"></script>
+</body></html>
