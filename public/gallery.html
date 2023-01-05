@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Dadecreamy Foodies And Events</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+  <script src="https://kit.fontawesome.com/106e912e00.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="css/gallery.css">
+          <link rel="icon" href="logo.ico">
+</head>
+<body>
+       
+		<div class="navbar">
+			<nav>
+				<img src="images/logo.png" alt="">
+				<div class="icon-one" onclick="toggleMenu()">
+					<div class="hamburger hamburger-one"></div>
+				  </div>
+			  <ul class="navlist">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/gallery">Gallery</a></li>
+				<li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+				<li><a href="/events">Events</a></li>
+				<button type="button" class="navbtn" onclick="window.location.href='/#findus'">Contact Us</button>
+			  </ul>
+			</nav>
+		  </div>
+          <section>
+            <div class="header">
+                <h1 id="header">Gallery</h1>
+            </div>
+          </section>
+          <section id="gallery">
+            <div class="galleryimg"><img src="images/afolashade.jpg" alt=""></div>
+            <div class="galleryimg"><img src="images/cake.jpg" alt=""></div>
+            <div class="galleryimg"><img src="images/cake2.jpg" alt=""></div>
+            <div class="galleryimg"><img src="images/chicken.jpg" alt=""></div>
+            <div class="galleryimg"><img src="images/food1.png" alt=""></div>
+            <div class="galleryimg"><img src="images/food2.png" alt=""></div>
+            <div class="galleryimg"><img src="images/food3.png" alt=""></div>
+            <div class="galleryimg"><img src="images/food4.png" alt=""></div>
+            <div class="galleryimg"><img src="images/food5.png" alt=""></div>
+            <div class="galleryimg"><img src="images/food6.png" alt=""></div>
+            <div class="galleryimg"><img src="images/himage1.jpg" alt=""></div>
+            <div class="galleryimg"><img src="images/himage2.jpg" alt=""></div>
+          </section>
+          <footer>
+            <form action="/signup" method="post">
+              <h3>Sign-up to our newsletter</h3>
+              <label for="name">What's your name?</label>
+              <br>
+              <input type="text" name="names"><br><br>
+              <label for="email">Enter your Email</label>
+              <br>
+              <input type="email" name="emails">
+              <input type="submit" value="Submit">
+        
+            </form>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#findus">Contact</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+                <li><a href="/events">Events</a></li>
+            </ul>
+            <br><br>
+            <p class="credit">&copy; <span id="year"></span> Dadecreamy Foodies And Events</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+        <script src="index.js"></script>
+</body>
+</html>

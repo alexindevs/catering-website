@@ -421,6 +421,56 @@ grid-template-columns: auto;
  padding: 15px;
 }
 
+#events {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+ 
+.event img {
+  width: 300px;
+  height: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.event:hover img {  
+ filter: brightness(50%) grayscale(40%);
+}
+
+#eventheader {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 40px;
+  padding-top: 50px;
+  color: black;}
+
+.event {
+  position: relative;
+  text-align: center;
+}
+
+.event:hover p {
+  color: white;
+}
+
+.event p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: transparent;
+  font-size: 25px;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
 .icon {
   color: yellow;
 }
@@ -480,7 +530,7 @@ button:hover {
   margin-bottom: 30px;
   border-radius: 7px;
   width: 400px;
-  border-color: rgb(255, 97, 121);
+  border-color: rgb(0, 0, 0);
   transition: 600ms;
   outline: none;
 }
@@ -491,6 +541,7 @@ button:hover {
   height: 40px;
   margin-top: 15px;
   border-radius: 10px;
+  border: none;
   transition: 0.5s;
   text-align: center; }
 
@@ -507,7 +558,7 @@ button:hover {
   textarea {
     border-radius: 5px;
     padding: 10px;
-    border-color: rgb(255, 97, 121);
+    border-color: rgb(0, 0, 0);
     transition: 600ms;
     outline: none;
   }
@@ -560,11 +611,16 @@ footer form {
 }
 
 footer form label {
-  font-size: 30px;
-  font-family: 'Raleway';
+  font-size: 16px;
 }
 
-footer form input[type=email] {
+footer form h3 {
+  font-size: 30px;
+  font-family: 'Raleway';
+  padding-bottom: 20px;
+}
+
+footer form input[type=email], footer form input[type=text] {
   height: 35px;
   width: 300px;
   border-radius: 10px;

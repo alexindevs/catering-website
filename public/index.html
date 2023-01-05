@@ -26,24 +26,23 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/gallery">Gallery</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Events</a></li>
-				<button type="button" class="navbtn">Contact Us</button>
+				<li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+				<li><a href="/events">Events</a></li>
+				<button type="button" class="navbtn" onclick="window.location.href='/#findus'">Contact Us</button>
 			  </ul>
 			</nav>
 		  </div>
 		<section id="hero">
 			<div class="herotext">
 				<h1><span id="heroword">Welcome to Dadecreamy Foodies and Events</span>!</h1>
-				<button class="herobtn" href="#about" onclick="about()">See More</button>
+				<a href="#about"><button class="herobtn">See More</button></a>
 			</div>
 		</section>
 		<section id="services">
 			<div>
 				<h2 class="service">Fantastic Events</h2>
 				<p class="stext">We take care of the hosting by providing tables & chairs, food, equipment like cutlery and silverware. Our staff will ensure everything is set up just the way you want it to be. Let Dadecreamy do all the work so you can enjoy!</p>
-				<button class="btn">Our Events</button>
+				<button class="btn" onclick="window.location.href='/events'">Our Events</button>
 			</div>
 			<div>
 				<h2 class="service">Delicious Food</h2>
@@ -53,14 +52,14 @@
 			<div>
 				<h2 class="service">Yummy Cakes</h2>	
 				<p class="stext">Fancy cake is delicious, but it's also can be difficult to present properly. Luckily, we're here to provide a range of delicious gourmet cakes that are presented in an elegant way. Your mouth will water when you see them!</p>
-				<button class="btn">View Our Gallery</button>
+				<button class="btn" onclick="window.location.href='/gallery'">View Our Gallery</button>
 			</div>
 		</section>
 		<section id="about">
 			<h2>About Us</h2>
 			<p>Welcome to Dadecreamy, we are an event catering company that provides mouth-watering morsels of delightful food and desserts for all occasions. We've been in the game since 2006 and provide not just delicious food and desserts, but a friendly service and a venue that you can call your own.
 				We provide catering, facilitation and venue rental services for events such as birthdays, weddings and corporate functions, with food options that include finger food, continental dishes, grilled meat, salad and more. We offer a wide range of desserts, including cakes, cupcakes, chocolates and more.</p>
-			<button class="btn">Learn More</button>
+			<button class="btn" onclick="window.location.href='/about'">Learn More</button></a>
 		</section>
 		<section id="gallery">
            <h2>Gallery</h2>
@@ -72,6 +71,21 @@
 			<img src="images/himage4.jpg" alt="">
 			<img src="images/himage5.jpg" alt="">
 		   </div>
+		</section>
+		<h2 id="eventheader">Our Events</h2>
+		<section id="events">
+			<div class="cake event">
+				<img src="images/cake.jpg" alt="">
+				<p>Birthdays</p>
+			</div>
+			<div class="wedding event">
+				<img src="images/himage4.jpg" alt="">
+				<p>Weddings</p>
+			</div>
+			<div class="corporate event">
+				<img src="images/himage2.jpg" alt="">
+				<p>Birthdays</p>
+			</div>
 		</section>
 		<section id="testimonials">
 		<h2>Here's what our clients have to say...</h2>
@@ -97,6 +111,7 @@
 		</div>
 		
 		</section>
+
 		<section id="slideshow">
 			<div class="swiper">
 				<!-- Additional required wrapper -->
@@ -130,28 +145,28 @@
 		</section>
 
 		<footer>
-		<form action="/" method="post">
+		<form action="/signup" method="post">
+			<h3>Sign-up to our newsletter</h3>
+			<label for="name">What's your name?</label>
+			<br>
+			<input type="text" name="names"><br><br>
 			<label for="email">Enter your Email</label>
-			<br><br>
+			<br>
 			<input type="email" name="emails">
 			<input type="submit" value="Submit">
 
 		</form>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Menu</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Events</a></li>
+			<li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#findus">Contact</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+			<li><a href="/events">Events</a></li>
 		</ul>
 		<br><br>
 		<p class="credit">&copy; <span id="year"></span> Dadecreamy Foodies And Events</p>
 	</footer>
-<script>const currentYear = new Date().getFullYear();
-document.getElementById('year').innerHTML = currentYear; 
-</script>
-
 		<script>
 			document.querySelector('.icon-one').addEventListener("click", function() {
 		document.querySelector('.icon-one').classList.toggle('active-one');

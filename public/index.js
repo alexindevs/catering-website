@@ -1,3 +1,13 @@
+document.querySelector('.icon-one').addEventListener("click", function() {
+  document.querySelector('.icon-one').classList.toggle('active-one');
+});
+      function toggleMenu() {
+var navbar = document.querySelector('.navlist');
+var menu = document.querySelector('.hamburger-menu');
+navbar.classList.toggle('show');
+menu.classList.toggle('open');
+      } 
+
 var wordPicker = ["Experience the taste of Nigeria with our delicious catering services", 
 "From intimate gatherings to grand events, we cater to your every need", 
 "Bring the flavors of Nigeria to your next event with our expert catering team", 
@@ -16,6 +26,8 @@ var time = setInterval(function() {
     i = 0; }
 }, 6000)
 
+const currentYear = new Date().getFullYear();
+document.getElementById('year').innerHTML = currentYear; 
 
 // Define the images array
 const images = [
@@ -91,11 +103,6 @@ function about(){
     });
     
 
-    // Initialize the lightbox effect
-$('.gallery').lightGallery({
-  selector: 'img'
-});
-
 const testimonialsContainer = document.querySelector(".testimonials-container");
 const prevButton = document.querySelector("#prev-button");
 const nextButton = document.querySelector("#next-button");
@@ -110,3 +117,19 @@ nextButton.addEventListener("click", function() {
   testimonialsContainer.scrollLeft += testimonialsContainer.offsetWidth;
 });
 
+const div = document.querySelector('.event');
+const img = div.querySelector('img');
+const text = div.querySelector('p');
+
+function handleHover() {
+  img.style.filter = 'brightness(50%)';
+  text.style.color = 'white';
+}
+
+function handleLeave() {
+  img.style.filter = 'brightness(100%)';
+  text.style.color = 'transparent';
+}
+
+div.addEventListener('mouseenter', handleHover);
+div.addEventListener('mouseleave', handleLeave);

@@ -25,11 +25,10 @@
 			  <ul class="navlist">
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Events</a></li>
-				<button type="button" class="navbtn">Contact Us</button>
+				<li><a href="/gallery">Gallery</a></li>
+				<li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+				<li><a href="/events">Events</a></li>
+				<button type="button" class="navbtn" onclick="window.location.href='/#findus'">Contact Us</button>
 			  </ul>
 			</nav>
 		  </div>
@@ -94,21 +93,24 @@ We are thrilled to be able to bring our passion for catering to the Lagos commun
           </section>
           
           <footer>
-            <form action="/" method="post">
-                <label for="email">Enter your Email</label>
-                <br><br>
-                <input type="email" name="emails">
-                <input type="submit" value="Submit">
-    
+            <form action="/signup" method="post">
+              <h3>Sign-up to our newsletter</h3>
+              <label for="name">What's your name?</label>
+              <br>
+              <input type="text" name="names"><br><br>
+              <label for="email">Enter your Email</label>
+              <br>
+              <input type="email" name="emails">
+              <input type="submit" value="Submit">
+        
             </form>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#findus">Contact</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+                <li><a href="/events">Events</a></li>
             </ul>
             <br><br>
             <p class="credit">&copy; <span id="year"></span> Dadecreamy Foodies And Events</p>

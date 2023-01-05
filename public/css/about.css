@@ -305,11 +305,16 @@ footer {
   }
   
   footer form label {
-    font-size: 30px;
-    font-family: 'Raleway';
+    font-size: 16px;
   }
   
-  footer form input[type=email] {
+  footer form h3 {
+    font-size: 30px;
+    font-family: 'Raleway';
+    padding-bottom: 20px;
+  }
+  
+  footer form input[type=email], footer form input[type=text] {
     height: 35px;
     width: 300px;
     border-radius: 10px;
