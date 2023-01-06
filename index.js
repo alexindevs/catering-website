@@ -70,7 +70,7 @@ app.post("/signup", function(req, res) {
         if (error) {
           console.log(error);
         } else {
-          res.redirect("/");
+          res.redirect(req.headers.referer);
           console.log("Data Saved Succesfully")
 
         }

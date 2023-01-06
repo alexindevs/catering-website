@@ -5,43 +5,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@100&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;   
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
- }
-
- h2 {
-  font-family: 'Raleway Dots';
-}
-  body{
-    background: white;
-    color: black;
-    width: 100% !important;
-  }
-
-  .fixed {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    z-index: 9999;
-    transition: all 0.7s ease-in;
-  }
-
-  nav {
-    display: block;
-    height: auto;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: lighter;
+  padding: 0;
+  margin: 0;   
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
 }
 
-  nav img {
-    padding-top: 10px;
-    width: 60px;
-    height: 80px;
+h1, h2 {
+font-family: 'Raleway Dots';
+}
+body{
+  background: white;
+  color: #000000;
+  width: 100% !important;
+}
+
+.fixed {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.7s ease-in;
+}
+
+nav {
+  display: block;
+  height: auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+nav img {
+  padding-top: 10px;
+  width: 60px;
+  height: 80px;
+  margin-left: 40px;
 }
 .navbar {
 background-color: white;
@@ -65,18 +66,20 @@ transition: 0.5s;
 @media (min-width: 901px){
 .icon-one {
 display: none;
+
 }}
 
 .navbar ul {
 list-style-type: none;
 margin: 0;
+margin-right: 20px;
 padding: 0;
 float: right;
 }
 
 .navbar li {
 display: inline-block;
-margin-top: 30px;
+margin-top: 35px;
 }
 
 .navbar a {
@@ -128,8 +131,9 @@ top: 10px;
 .icon-one {
 position: relative;
 float: right;
-width: 100px;
-height: 100px;
+width: 50px;
+height: 90px;
+margin-right: 30px;
 cursor: pointer;
 }
 
@@ -161,47 +165,56 @@ box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 .navbar li {
 display: block;
+margin-top: 20px;
 } 
 nav {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
 }
 .navbar ul {
-    float: none;
-    text-align: center;
+  float: none;
+  text-align: center;
 }
 
 .navbtn {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-}
-
-.herotext {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.herobtn:hover {
-  background-color: black;
-}
-
-.herobtn {
-  width: 120px;
-  height: 40px;
-  background-color: transparent;
-  margin-top: 30px;
-  border: 3px solid black;
-  border-radius: 10px;
-  transition: 0.5s;
-  margin-bottom: 30px;
-  color: white;
 }
 
 .navbtn:hover {
-  background-color: #ff6078;
-  color: white;
+background-color: #ff6078;
+color: white;
+
+}
+
+.herotext {
+padding-top: 10%;
+padding-bottom: 10%;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.herobtn:hover {
+background-color: black;
+}
+
+
+
+.herobtn {
+width: 120px;
+height: 40px;
+background-color: transparent;
+margin-top: 30px;
+border: 3px solid black;
+border-radius: 10px;
+transition: 0.5s;
+margin-bottom: 30px;
+color: white;
+}
+
+.navbtn:hover {
+background-color: #ff6078;
+color: white;
 
 }
 /* 
@@ -224,7 +237,12 @@ transition: all 0.5s ;
    font-size: 70px;
    color: white;
    font-family: 'Raleway';
+  }
 
+  @media (max-width: 500px) {
+    #hero > div > h1, #heroword {
+font-size: 50px;
+    }
   }
 
 #services {
@@ -429,6 +447,14 @@ grid-template-columns: auto;
   align-items: center;
   margin-bottom: 40px;
 }
+
+@media (max-width: 500px) {
+#events {
+  grid-template-columns: auto;
+  row-gap: 30px;
+
+}
+}
  
 .event img {
   width: 300px;
@@ -519,9 +545,11 @@ button:hover {
   color: black;
 }
 
+
 .contact {
   text-align: center;
   margin-top: 30px;
+
 }
 
 #findus input {
@@ -529,8 +557,7 @@ button:hover {
   padding: 6px;
   margin-bottom: 30px;
   border-radius: 7px;
-  width: 400px;
-  border-color: rgb(0, 0, 0);
+  width: 90%;
   transition: 600ms;
   outline: none;
 }
@@ -568,19 +595,51 @@ button:hover {
   height: 600px;
 }
 
-
-@media (max-width: 600px) {
-  .frame {
-    width: 100%;
-    height: 400px;
-  } }
+  
 
 #findus {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns:auto auto ;
   justify-content: space-evenly;
+  row-gap: none;
 }
 
+@media (max-width: 900px) {
+  .frame {
+    width: 100%;
+    height: 400px;
+  }
+  #findus {
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+
+  #findus label {
+    padding: 20px
+  }
+
+  textarea {
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  #map {
+    margin-bottom: 30px;
+  }
+
+  footer input[type=submit]{
+    margin-top: 15px;
+  }
+
+  #findus input {
+    margin-left: 20px;
+    outline: none;
+  }
+
+  #map h2 {
+    font-size: 30px;
+  }
+  }
 
 
 #findus h2 {
@@ -611,7 +670,7 @@ footer form {
 }
 
 footer form label {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 footer form h3 {
@@ -684,4 +743,51 @@ button {
 button:hover {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); /* Add a white, semi-transparent box shadow on hover */
 border: none;
+}
+
+@media (max-width: 600px) {
+  footer form {
+    padding-left: 10px;
+  }
+
+  footer form h3 {
+    font-size: 25px;
+    font-family: 'Raleway';
+    padding-bottom: 20px;
+}
+footer form input[type=email], footer form input[type=text] {
+  height: 32px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+.credit {
+padding-bottom: 20px;
+padding-left: 20px;
+font-family: 'Raleway';
+}
+
+footer ul {
+  padding-left: 20px;
+}
+}
+
+
+@media (max-width:900px) {
+  #events {
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+
+  }
+
+  .event img {
+    width: 270px;
+    height: 320px;
+    transition: all 0.3s ease-in-out;
+  }
 }
