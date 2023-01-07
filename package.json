@@ -4,7 +4,7 @@
   "description": "Dadecreamy Foodies and Events is a catering company located in Lagos, Nigeria.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Esther Ohiomame",
   "license": "ISC",
