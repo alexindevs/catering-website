@@ -42,7 +42,7 @@ nav img {
   padding-top: 10px;
   width: 60px;
   height: 80px;
-  margin-left: 40px;
+  margin-left: 15px;
 }
 .navbar {
 background-color: white;
@@ -217,18 +217,15 @@ background-color: #ff6078;
 color: white;
 
 }
-/* 
-TODO: Decrease opacity of HERO images
-TODO: Commit to github
-TODO: take that topic on mongodb/ buy card */
 
 #hero {
-  background: url(../images/himage1.jpg);
+  background: url(../images/food6.png);
   background-position: cover;
   height: auto;
   background-attachment: fixed;
   text-align: center;
-transition: all 0.5s ;
+transition: all 0.5s;
+width: auto;
 }
 
 #hero > div > h1, #heroword {
@@ -239,9 +236,10 @@ transition: all 0.5s ;
    font-family: 'Raleway';
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     #hero > div > h1, #heroword {
 font-size: 50px;
+text-align: center;
     }
   }
 
@@ -302,7 +300,7 @@ font-size: 50px;
 }
 
 #about > p {
-  padding: 0px 40px;
+  padding: 0px 15px;
   font-size: 19px;
 }
 
@@ -448,6 +446,20 @@ grid-template-columns: auto;
   margin-bottom: 40px;
 }
 
+@media (max-width:900px) {
+  #events {
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+
+  }
+
+  .event img {
+    width: 270px;
+    height: 320px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
 @media (max-width: 500px) {
 #events {
   grid-template-columns: auto;
@@ -528,7 +540,7 @@ button:hover {
 
 @media (max-width: 500px) {
   .swiper-button-prev, .swiper-button-next {
-    padding: 30px;
+    padding: 10px;
   }
 }
 
@@ -734,6 +746,7 @@ input[type=submit]:hover {
   background-color: black;
   color: white;
 }
+
 button {
   border: 1px solid #ff6078;
   color: black;
@@ -746,6 +759,12 @@ border: none;
 }
 
 @media (max-width: 600px) {
+
+  footer {
+    background-color: #000000;
+
+  }
+
   footer form {
     padding-left: 10px;
   }
@@ -778,16 +797,3 @@ footer ul {
 }
 
 
-@media (max-width:900px) {
-  #events {
-    grid-template-columns: auto auto;
-    row-gap: 30px;
-
-  }
-
-  .event img {
-    width: 270px;
-    height: 320px;
-    transition: all 0.3s ease-in-out;
-  }
-}

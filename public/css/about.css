@@ -42,7 +42,7 @@ nav img {
   padding-top: 10px;
   width: 60px;
   height: 80px;
-  margin-left: 40px;
+  margin-left: 15px;
 }
 .navbar {
 background-color: white;
@@ -319,7 +319,6 @@ color: white;
    #ceo p {
     text-align: left;
     padding: 10px 10px;
-    margin: 20px;
    }
 
    #ceo p:not(:first-of-type) {
@@ -474,6 +473,10 @@ footer {
   }
 
   @media (max-width: 600px) {
+    footer {
+      background-color: #000000;
+    }
+
     footer form {
       padding-left: 10px;
     }

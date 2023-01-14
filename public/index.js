@@ -8,9 +8,8 @@ navbar.classList.toggle('show');
 menu.classList.toggle('open');
       } 
 
-var wordPicker = ["Experience the taste of Nigeria with our delicious catering services", 
+var wordPicker = ["Experience the taste of our culture with our delicious catering services", 
 "From intimate gatherings to grand events, we cater to your every need", 
-"Bring the flavors of Nigeria to your next event with our expert catering team", 
 "Celebrate in style with our customizable catering options", 
 "Leave the cooking to us - let us cater your next event and impress your guests!",
 "Impress your guests with our wide variety of traditional dishes",
@@ -20,11 +19,10 @@ var wordPicker = ["Experience the taste of Nigeria with our delicious catering s
 var i = 0;
 var time = setInterval(function() {
     $("#heroword").text(wordPicker[i]);
-    ScrollReveal().reveal('#heroword');
     i++;
   if (i >= wordPicker.length) {
     i = 0; }
-}, 6000)
+}, 7000)
 
 const currentYear = new Date().getFullYear();
 document.getElementById('year').innerHTML = currentYear; 

@@ -29,6 +29,10 @@ app.get("/gallery", function(req, res) {
     res.sendFile(__dirname + "/public/gallery.html")
 })
 
+app.get("/menu", function(req, res) {
+  res.sendFile(__dirname + "/public/menu.html")
+})
+
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -70,11 +74,10 @@ app.post("/signup", function(req, res) {
         if (error) {
           console.log(error);
         } else {
-          res.redirect(req.headers.referer);
           console.log("Data Saved Succesfully")
+      res.sendFile(__dirname + "/public/signup.html");
 
         }
   
       });
-      res.redirect(req.headers.referer);
     });

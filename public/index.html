@@ -4,7 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Dadecreamy Foodies And Events!</title>
+		<meta name="theme-color" content="#ff6078">
+		<meta property="og:image:secure_url" content="/images/thumbnail.jpg">
+		<title>DadecreamyFoodies And Events!</title>
 		
 		<link
   rel="stylesheet"
@@ -26,8 +28,10 @@
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/gallery">Gallery</a></li>
-				<li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+                <li><a href="/menu">Menu</a></li>
 				<li><a href="/events">Events</a></li>
+				<li><a href="https://www.youtube.com/@dadecreamyfoodieseventserv4605">Trainings</a></li>
+
 				<button type="button" class="navbtn" onclick="window.location.href='/#findus'">Contact Us</button>
 			  </ul>
 			</nav>
@@ -47,7 +51,7 @@
 			<div>
 				<h2 class="service">Delicious Food</h2>
 				<p class="stext">All our cooking is guided by a hungry stomach. We believe that what tastes good is healthy too (increasingly important in the Nigerian context) and that taste must be involved in every decision. We have dishes tailored to cuisine preferences.</p>
-				<button class="btn">Our Menu</button>
+				<button class="btn" onclick="window.location.href='/menu'">Our Menu</button>
 			</div>
 			<div>
 				<h2 class="service">Yummy Cakes</h2>	
@@ -58,7 +62,7 @@
 		<section id="about">
 			<h2>About Us</h2>
 			<p>Welcome to Dadecreamy, we are an event catering company that provides mouth-watering morsels of delightful food and desserts for all occasions. We've been in the game since 2006 and provide not just delicious food and desserts, but a friendly service and a venue that you can call your own.
-				We provide catering, facilitation and venue rental services for events such as birthdays, weddings and corporate functions, with food options that include finger food, continental dishes, grilled meat, salad and more. We offer a wide range of desserts, including cakes, cupcakes, chocolates and more.</p>
+				With over a decade's experience working for top corporate organisations in the country, Dadecreamy has set up a bespoke catering enterprise.</p>
 			<button class="btn" onclick="window.location.href='/about'">Learn More</button></a>
 		</section>
 		<section id="gallery">
@@ -93,13 +97,13 @@
 			<div id="person" class="person1 personshadow">
 				<img src="images/woman2.jpg" class="person">
 				<h3>Mrs Osikoya Abiola</h3>
-				<p>I had the pleasure of working with Dadecreamy Foodies and Events for my birthday party. The entire experience was wonderful, from start to finish. I highly recommend Dadecreamy Foodies and Events if you're planning an event or just looking for a reliable caterer!</p>
+				<p>I had the pleasure of working with DadecreamyFoodies and Events for my birthday party. The entire experience was wonderful, from start to finish. I highly recommend DadecreamyFoodies and Events if you're planning an event or just looking for a reliable caterer!</p>
 				<p>Rated us: <i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i></p>
 			</div>
 			<div id="person" class="person2 personshadow">
 				<img src="images/woman1.jpg" class="person">
 				<h3>Dr Anne Adunola</h3>
-				<p>Dadecreamy Foodies and Events is the best caterer we've had yet! We booked them for our wedding reception and they absolutely blew us away with their service. The food was delicious, the staff were super friendly, and they even brought an amazing cake that didn't need to be cut (we had a lot of people eating off of it). Definitely 5 out of 5 stars!</p>
+				<p>DadecreamyFoodies and Events is the best caterer we've had yet! We booked them for our wedding reception and they absolutely blew us away with their service. The food was delicious, the staff were super friendly, and they even brought an amazing cake that didn't need to be cut (we had a lot of people eating off of it). Definitely 5 out of 5 stars!</p>
 				<p>Rated us: <i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i><i class="fa-solid icon fa-star"></i></p>
 			</div>
 			<div id="person" class="person3 personshadow">
@@ -128,11 +132,11 @@
 		<div id="contact">
 		<h2>Contact Us</h2>
 		<form action="/messages" method="post">
-			<label for="name">What's your name?</label><br>
+			<label for="name">Name:</label><br>
 			<input type="text" name="name" required><br>
-			<label for="email">Email</label><br>
+			<label for="email">Email:</label><br>
 			<input type="email" name="email" autocomplete="email" required><br>
-			<label for="number">What's your number?</label><br>
+			<label for="number">Phone Number:</label><br>
 			<input type="tel" name="teln" autocomplete="tel"><br>
 			<label for="message">Leave a message:</label><br>
 			<textarea name="message" id="" cols="45" rows="10" required></textarea><br>
@@ -149,10 +153,10 @@
 			<h3>Sign-up to our newsletter</h3>
 			<label for="name">What's your name?</label>
 			<br>
-			<input type="text" name="names"><br><br>
+			<input type="text" name="names" required><br><br>
 			<label for="email">Enter your Email</label>
 			<br>
-			<input type="email" name="emails">
+			<input type="email" name="emails" required><br><br>
 			<input type="submit" value="Submit">
 
 		</form>
@@ -161,11 +165,13 @@
                 <li><a href="/about">About</a></li>
                 <li><a href="/#findus">Contact</a></li>
                 <li><a href="/gallery">Gallery</a></li>
-                <li><a href="classicnaijafoodrecipes.pdf" download>Menu</a></li>
+                <li><a href="/menu">Menu</a></li>
 			<li><a href="/events">Events</a></li>
+			<li><a href="https://www.youtube.com/@dadecreamyfoodieseventserv4605">Trainings</a></li>
+
 		</ul>
 		<br><br>
-		<p class="credit">&copy; <span id="year"></span> Dadecreamy Foodies And Events</p>
+		<p class="credit">&copy; <span id="year"></span> DadecreamyFoodies And Events</p>
 	</footer>
 		<script>
 			document.querySelector('.icon-one').addEventListener("click", function() {
