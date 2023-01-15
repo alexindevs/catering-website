@@ -50,7 +50,7 @@ background-color: white;
 }
 
 .navbtn:hover {
-background-color: #ff6078;
+background-color: #ff00ff;
 color: white;
 
 }
@@ -60,7 +60,7 @@ width: 120px;
 height: 40px;
 margin: 0px 15px;
 background-color: transparent;
-border: 1px solid #ff6078;
+border: 1px solid #ff00ff;
 border-radius: 10px;
 transition: 0.5s;
 }
@@ -93,7 +93,7 @@ transition: 0.5s;
 }
 
 .navbar a:hover{
-color: #ff6078;
+color: #ff00ff;
 }
 
 
@@ -111,9 +111,9 @@ top:50%;
 left:10%;
 width: 30px;
 height: 2px;
-background: pink;
+background: #ff00ff;
 position: absolute;
-color: pink;
+color: #ff00ff;
 box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 transition: 0.5s;
 }
@@ -144,7 +144,7 @@ content: '';
 position:absolute;
 width: 30px;
 height: 2px;
-background:pink;
+background:#ff00ff;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 transition:0.5s;
 }
@@ -183,7 +183,7 @@ nav {
 }
 
 .navbtn:hover {
-background-color: #ff6078;
+background-color: #ff00ff;
 color: white;
 
 }
@@ -214,7 +214,7 @@ color: white;
 }
 
 .navbtn:hover {
-background-color: #ff6078;
+background-color: #ff00ff;
 color: white;
 
 }
@@ -233,6 +233,41 @@ color: white;
     color: white;
     font-family: 'Raleway';
     line-height: 300px;
+}
+
+#icon {
+  padding: 7px 14px;
+  border-radius: 100%;
+  background-color: rgb(33, 175, 33);
+  width: fit-content;
+  height: auto;
+  position: fixed;
+  margin-top: 80vh;
+  z-index: 999;
+  margin-left: auto;
+ animation: pulse 2s infinite;
+ left: 70%;
+}
+
+@keyframes pulse {
+  50% {
+    box-shadow: 0px 0px 20px rgb(20, 190, 20)
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+.whatsapp-icon {
+  font-size: 48px;
+  color: white;
+}
+
+@media (min-width: 700px) {
+  #icon {
+    left: 90%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -292,7 +327,7 @@ color: white;
   
   
 footer {
-    background-color: #ff6078;
+    background-color: #ff00ff;
     color: white;
     font-family: 'Raleway';
     font-weight: 600;
@@ -316,7 +351,7 @@ footer {
     padding-bottom: 20px;
   }
   
-  footer form input[type=email], footer form input[type=text] {
+  footer form input[type=tel], footer form input[type=text] {
     height: 35px;
     width: 300px;
     border-radius: 10px;
@@ -372,7 +407,7 @@ footer {
     color: white;
   }
   button {
-    border: 1px solid #ff6078;
+    border: 1px solid #ff00ff;
     color: black;
     background-color: transparent;   
   }
@@ -419,7 +454,7 @@ footer {
       font-family: 'Raleway';
       padding-bottom: 20px;
   }
-  footer form input[type=email], footer form input[type=text] {
+  footer form input[type=tel], footer form input[type=text] {
     height: 32px;
     width: 200px;
     border-radius: 10px;
@@ -441,4 +476,44 @@ footer {
   }
   }
   
+  .icons {
+    margin-left: 15px;
+  }
+  
+  .ficon:hover {
+    font-size: 35px;
+  }
+  
+  @media (max-width: 600px) {
+  
+   .icons {
+    margin-left: 0px;
+   }
+  }
+  
+  
+  
+  
+  .ficon {
+    font-size: 30px;
+    padding: 0px 15px;
+  }
+  
+  
+  
+  #fb {
+    color: rgb(65, 65, 175);
+  }
+  
+  #insta {
+    background: -webkit-linear-gradient(rgb(226, 35, 201), rgb(238, 195, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  #tiktok {
+    text-shadow: 2px 2px 1px blue;
+    
+  }
   
