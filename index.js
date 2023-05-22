@@ -7,7 +7,7 @@ mongoose.connect('mongodb+srv://alexdevs:hcjmern@mycluster.cjomhjv.mongodb.net/d
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.listen(8080, function() {
+app.listen(3000, function() {
     console.log("Server running on port 8080")
 })
 
