@@ -11,4 +11,10 @@
         "dest": "index.js"
       }
   ]
-}s
+  "rewrites": [
+{
+  "source": "/(.*)",
+  "destination": "/"
+}
+]  
+}
