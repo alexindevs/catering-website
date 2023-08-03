@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/vendor', express.static('node_modules'));
 
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "public", "index.html")); // Use path.join()
+    res.sendFile(__dirname + "public/about.html"); //This line was changed
 })
 
 app.get("/about", function(req, res) {
