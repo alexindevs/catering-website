@@ -12,7 +12,8 @@ app.listen(3000, function() {
     console.log("Server running on port 8080")
 })
 
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/vendor', express.static('node_modules'));
 
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "public", "index.html")); // Use path.join()
