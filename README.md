@@ -1,8 +1,6 @@
-# Unpaid Efforts Catering
-
 ## Introduction
 
-Welcome to this Catering Site repository! This repository contains the website files that I, a dedicated teen developer, have worked tirelessly on, showcasing my passion for web development.
+Welcome to this Catering Site repository! This repository contains the website files that I worked tirelessly on, showcasing my passion for web development.
 
 ## My Story
 
